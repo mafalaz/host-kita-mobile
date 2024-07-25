@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.payment.PaymentActivitySuccess">
+
+    <ImageView
+        android:id="@+id/imageViewGif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="GIF Image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvNoteSuccess" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/imageViewGif"
+        android:text="Pembayaran Berhasil"/>
+
+    <TextView
+        android:id="@+id/tvNoteSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableAlamat"
+        android:text="Silahkan Anda kirimkan produk ke alamat di bawah ini dan maksimal sudah sampai di tempat live H-1 sesuai tanggal live."/>
+
+    <TableLayout
+        android:id="@+id/tableAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:stretchColumns="1">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#A7A6A6" />
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:text="Detail Order"/>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#A7A6A6" />
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:text="Nama Produk"/>
+            <TextView
+                android:id="@+id/tvNamaProduk"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:text="Jumlah Produk"/>
+            <TextView
+                android:id="@+id/tvJumlahProduk"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:text="Tanggal Live"/>
+            <TextView
+                android:id="@+id/tvTanggalLive"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#A7A6A6" />
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:text="Alamat Live"/>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#A7A6A6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:text="Pasar Online"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginTop="1dp"
+            android:text="Jl. Bojong Pulo RT 09/ RW 04 Rawa Buaya, Cengkareng, Jakarta Barat"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMaps"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Buka Maps"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:textSize="14sp"
+            app:elevation="10dp"
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/open_sans"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#A7A6A6" />
+
+    </TableLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonKeOrderPage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Dashboard"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="14sp"
+        app:elevation="10dp"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/tableAlamat"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.loginregister.LoginRegister">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_host_kita_blue"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageTalent"/>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat datang di Host Kita"
+        android:gravity="center"
+        android:fontFamily="@font/open_sans"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Masuk atau Daftar untuk mulai menggunakan aplikasi"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="MASUK"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/imageTalent"/>
+
+    <ImageView
+        android:id="@+id/imageTalent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/talent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="DAFTAR"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMasuk"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Host Kita</string>
+    <string name="description_image">Image</string>
+    <string name="slide_title">Title</string>
+    <string name="slide_description">Description</string>
+    <string name="slider1">Rekrut Host Talent Di Sekitarmu</string>
+    <string name="slider1desc">Tidak perlu khawatir kesulitan menemukan talent. Untuk UMKM temukan Host Talent di sekitarmu. Sebaliknya, kamu yang merupakan seorang Host Talent bisa menawarkan jasamu ke UMKM.</string>
+    <string name="slider2">Penggunaan Mudah</string>
+    <string name="slider2desc">Kamu hanya perlu melengkapi data diri di halaman profil. Setelah lengkap, kamu langsung bisa menggunakan Host Kita baik untuk UMKM ataupun Host Talent.</string>
+    <string name="slider3">Tidak Ada Potongan</string>
+    <string name="slider3desc">Terima keuntungan 100% untuk kamu sebagai Host Talent. Untuk UMKM, kamu hanya perlu membayar sesuai kesepakatan dengan Host Talent. Tidak ada potongan atau tambahan biaya dari aplikasi.</string>
+    <string name="title_activity_dashboard_umkm">DashboardUmkmActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_umkm_dashboard">UmkmDashboard</string>
+</resources>
