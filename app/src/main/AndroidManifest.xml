@@ -21,6 +21,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ui.detailpenjualan.DetailPenjualanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.penjualan.PenjualanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PenjualanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gantipassword.GantiPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.payment.PaymentActivitySuccess"
             android:exported="false" />
         <activity

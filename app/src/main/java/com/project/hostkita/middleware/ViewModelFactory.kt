@@ -10,7 +10,9 @@ import com.project.hostkita.rekening.RekeningViewModel
 import com.project.hostkita.ui.dashboardumkm.ui.dashboard.DashboardViewModel
 import com.project.hostkita.ui.dashboardumkm.ui.home.HomeViewModel
 import com.project.hostkita.ui.dashboardumkm.ui.profile.ProfileViewModel
+import com.project.hostkita.ui.detailpenjualan.DetailPenjualanViewModel
 import com.project.hostkita.ui.login.LoginViewModel
+import com.project.hostkita.ui.penjualan.PenjualanViewModel
 import com.project.hostkita.ui.register.RegisterViewModel
 import com.project.hostkita.ui.splashscreen.AuthViewModel
 
@@ -43,7 +45,12 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             modelClass.isAssignableFrom(DetailOrderViewModel::class.java) -> {
                 DetailOrderViewModel(repository) as T
             }
-
+            modelClass.isAssignableFrom(PenjualanViewModel::class.java) -> {
+                PenjualanViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(DetailPenjualanViewModel::class.java) -> {
+                DetailPenjualanViewModel(repository) as T
+            }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
     }

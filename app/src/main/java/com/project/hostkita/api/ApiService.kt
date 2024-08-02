@@ -1,11 +1,13 @@
 package com.project.hostkita.api
 
 import com.project.hostkita.models.DetailOrderResponse
+import com.project.hostkita.models.DetailPenjualanResponse
 import com.project.hostkita.models.GetOrderUserResponse
 import com.project.hostkita.models.GetRekeningResponse
 import com.project.hostkita.models.GetUmkmResponse
 import com.project.hostkita.models.LoginResponse
 import com.project.hostkita.models.OrderResponse
+import com.project.hostkita.models.PenjualanResponse
 import com.project.hostkita.models.RegisterResponse
 import com.project.hostkita.models.RekeningResponse
 import com.project.hostkita.models.UpdateRekeningResponse
@@ -86,4 +88,12 @@ interface ApiService {
     fun detailOrder(
         @Path("orderId") id: String,
     ): Call<DetailOrderResponse>
+
+    @GET("admin/penjualanNoDuplicateOrder")
+    fun getPenjualan(): Call<PenjualanResponse>
+
+    @GET("admin/penjualan/detail/{orderId}")
+    fun detailPenjualan(
+        @Path("orderId") id: String,
+    ): Call<DetailPenjualanResponse>
 }

@@ -48,14 +48,17 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/button_image_order"
+            android:id="@+id/button_image_gantiPassword"
             android:layout_width="150dp"
             android:layout_height="170dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:background="@drawable/profile_button_bg"
             android:drawableTop="@drawable/baseline_change_circle_24"
             android:layout_marginEnd="20dp"
             android:text="Ganti Password"
-            android:contentDescription="Order Talent Saya" />
+            android:contentDescription="Ganti Password" />
 
         <Button
             android:id="@+id/button_image_update"
@@ -72,6 +75,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearDashboardLogout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -81,14 +85,17 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/button_image_feedback"
+            android:id="@+id/buttonPenjualan"
             android:layout_width="150dp"
             android:layout_height="170dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:background="@drawable/profile_button_bg"
             android:drawableTop="@drawable/baseline_book_online_24"
             android:layout_marginEnd="20dp"
-            android:text="Dashboard Live"
-            android:contentDescription="Feedback" />
+            android:text="Dashboard Penjualan"
+            android:contentDescription="Penjualan" />
 
         <Button
             android:id="@+id/button_image_logout"
@@ -103,5 +110,34 @@
             android:text="Logout"
             android:contentDescription="Logout" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Butuh bantuan? Hubungi Admin kami"
+        app:layout_constraintTop_toBottomOf="@+id/linearDashboardLogout"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCS"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Hubungi Admin"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="14sp"
+        app:elevation="10dp"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue"
+        android:drawableLeft="@drawable/ic_whatsapp_resized"
+        android:drawablePadding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdmin"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

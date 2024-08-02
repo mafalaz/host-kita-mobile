@@ -40,7 +40,7 @@
         android:layout_marginStart="12dp"
         android:textColor="@color/blue"
         android:layout_marginEnd="10dp"
-        android:text="Sebuah aplikasi yang menghubungkan antara Host Live Streaming dan UMKM untuk melakukan promosi produk sesuai kesepakatan dari kedua belah pihak."
+        android:text="Sebuah aplikasi yang menghubungkan antara Host Live Streaming dan UMKM untuk melakukan promosi produk."
         android:textSize="16sp"/>
 
     <com.google.android.material.button.MaterialButton
